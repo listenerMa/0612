@@ -1,0 +1,145 @@
+.moveToTop {
+  -webkit-animation: moveToTop .6s ease both;
+  animation: moveToTop 3s ease both;
+}
+@-webkit-keyframes moveToTop {
+  to {
+    -webkit-transform: translateY(-100%) scale(0.5);
+  }
+}
+.moveFromBottom {
+  -webkit-animation: moveFromBottom .6s ease both;
+  animation: moveFromBottom .6s ease both;
+}
+@keyframes moveFromBottom {
+  to {
+    transform: translateY(0);
+  }
+}
+.moveFromTop {
+  -webkit-animation: moveFromTop .6s ease both;
+  animation: moveFromTop .6s ease both;
+}
+@keyframes moveFromTop {
+  to {
+    transform: translateY(0%);
+  }
+}
+.moveToBottom {
+  -webkit-animation: moveToBottom .6s ease both;
+  animation: moveToBottom 3s ease both;
+}
+@keyframes moveToBottom {
+  to {
+    transform: translateY(100%) scale(0.5);
+  }
+}
+.arrow {
+  animation: loopArrow 1s infinite;
+}
+@keyframes loopArrow {
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+.active.music {
+  animation: musicRotate 2s linear infinite both;
+}
+@keyframes musicRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+.preCurrent .page1_fromLeft {
+  animation: page1_fromLeft 1s linear both;
+}
+@keyframes page1_fromLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.preCurrent .page1_fromRight {
+  animation: page1_fromRight 1s linear both;
+}
+@keyframes page1_fromRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.preCurrent .circleRotate1 {
+  animation: circleRotate1 1s linear both;
+}
+@keyframes circleRotate1 {
+  100% {
+    transform: translateY(-350%) rotate(360deg);
+  }
+}
+.preCurrent .circleRotate2 {
+  animation: circleRotate2 1s linear both;
+}
+@keyframes circleRotate2 {
+  100% {
+    transform: translate(-200%, -200%) rotate(360deg);
+  }
+}
+.preCurrent .circleRotate3 {
+  animation: circleRotate3 1s linear both;
+}
+@keyframes circleRotate3 {
+  100% {
+    transform: translate(-160%, 160%) rotate(360deg);
+  }
+}
+.preCurrent .circleRotate4 {
+  animation: circleRotate4 1s linear both;
+}
+@keyframes circleRotate4 {
+  100% {
+    transform: translateY(270%) rotate(360deg);
+  }
+}
+.preCurrent .circleRotate5 {
+  animation: circleRotate5 1s linear both;
+}
+@keyframes circleRotate5 {
+  100% {
+    transform: translate(160%, 160%) rotate(360deg);
+  }
+}
+.preCurrent .circleRotate6 {
+  animation: circleRotate6 1s linear both;
+}
+@keyframes circleRotate6 {
+  100% {
+    transform: translate(200%, -200%) rotate(360deg);
+  }
+}
+.preCurrent .rotatePic {
+  animation: rotatePic 1s linear both;
+}
+@keyframes rotatePic {
+  100% {
+    transform: rotateY(720deg);
+  }
+}
+.preCurrent .recScale {
+  animation: recScale 1s linear both;
+}
+@keyframes recScale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

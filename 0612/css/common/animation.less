@@ -1,0 +1,206 @@
+//页面从视口到上的动画效果
+.moveToTop {
+    -webkit-animation: moveToTop .6s ease both;  //缺少-webkit-animation，动画不兼容；
+    animation: moveToTop 3s ease both;
+}
+
+
+@-webkit-keyframes moveToTop {
+    from { }
+    to { -webkit-transform: translateY(-100%) scale(0.5); }
+}
+
+
+//页面从下到视口的动画效果
+.moveFromBottom{
+  -webkit-animation: moveFromBottom .6s ease both;
+  animation: moveFromBottom .6s ease both;
+}
+
+@keyframes moveFromBottom  {
+  from{ }
+  to{ transform: translateY(0); }
+}
+
+
+
+//向下滑动
+//页面从视口到下的动画效果
+.moveFromTop{
+  -webkit-animation: moveFromTop .6s ease both;
+  animation: moveFromTop .6s ease both;
+}
+@keyframes moveFromTop{
+  from{}
+  to{transform: translateY(0%);}
+}
+
+//页面从视口到下的动画效果
+.moveToBottom{
+  -webkit-animation: moveToBottom .6s ease both;
+  animation: moveToBottom 3s ease both;
+}
+@keyframes moveToBottom {
+  from{}
+  to{transform: translateY(100%) scale(0.5);}
+}
+
+
+//箭头动画
+.arrow{
+  animation: loopArrow 1s infinite;
+}
+
+@keyframes loopArrow {
+  0%{
+  }
+  100%{
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+//音乐转动动画
+.active.music{
+  animation: musicRotate 2s linear infinite both;
+}
+
+@keyframes musicRotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(720deg);
+  }
+}
+
+//页面中图片动画page1
+.preCurrent .page1_fromLeft{
+  animation: page1_fromLeft 1s linear both;
+}
+
+@keyframes page1_fromLeft {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.preCurrent .page1_fromRight{
+  animation: page1_fromRight 1s linear both;
+}
+@keyframes page1_fromRight {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+//页面中图片动画page2
+//1
+.preCurrent .circleRotate1{
+  animation: circleRotate1 1s linear both;
+}
+@keyframes circleRotate1 {
+  0%{
+
+  }
+  100%{
+    transform: translateY(-350%) rotate(360deg);
+  }
+}
+//2
+.preCurrent .circleRotate2{
+  animation: circleRotate2 1s linear both;
+}
+@keyframes circleRotate2 {
+  0%{
+
+  }
+  100%{
+    transform: translate(-200%,-200%) rotate(360deg);
+  }
+}
+//3
+.preCurrent .circleRotate3{
+  animation: circleRotate3 1s linear both;
+}
+@keyframes circleRotate3 {
+  0%{
+
+  }
+  100%{
+    transform: translate(-160%,160%) rotate(360deg);
+  }
+}
+//4
+.preCurrent .circleRotate4{
+  animation: circleRotate4 1s linear both;
+}
+@keyframes circleRotate4 {
+  0%{
+
+  }
+  100%{
+    transform: translateY(270%)  rotate(360deg);
+  }
+}
+//5
+.preCurrent .circleRotate5{
+  animation: circleRotate5 1s linear both;
+}
+@keyframes circleRotate5 {
+  0%{
+
+  }
+  100%{
+    transform: translate(160%,160%)  rotate(360deg);
+  }
+}
+//6
+.preCurrent .circleRotate6{
+  animation: circleRotate6 1s linear both;
+}
+@keyframes circleRotate6 {
+  0%{
+
+  }
+  100%{
+    transform: translate(200%,-200%)  rotate(360deg);
+  }
+}
+
+
+
+
+//页面中图片动画page3
+.preCurrent  .rotatePic{
+  animation: rotatePic 1s linear both;
+}
+
+@keyframes rotatePic {
+  0%{
+
+  }
+  100%{
+    transform: rotateY(720deg);
+  }
+}
+
+//页面中图片动画page4
+.preCurrent .recScale{
+  animation: recScale 1s linear both;
+}
+@keyframes recScale {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+

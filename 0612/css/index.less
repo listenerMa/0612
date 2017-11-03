@@ -1,0 +1,154 @@
+@import "common/reset.less";
+@import "common/animation.less";
+@import "common/mix";
+
+#wrap{
+  height: 100%;
+  overflow: hidden;
+  .preCurrent{           //展示将要被覆盖图片层级
+    z-index: 5;
+  }
+  .current{           //展示将要出场的图片层级
+    z-index: 10;
+  }
+  .hide{
+    display: none;
+  }
+  .toBottomOrigin{ //指头向下滑动时候改变要被替换页面的源点
+    transform-origin: 50% 100% 0;
+  }
+  .toTopOrigin{ //指头向上滑动时候改变要被替换页面的源点
+    transform-origin: 50% 0 0;
+  }
+  .list{
+    .pageBg(b);  //图片背景混合
+    p{
+      color: white;
+      text-align: center;
+      &:nth-of-type(1){
+        margin: 444px 0 0 0;
+        transform: translateX(100%);
+      }
+      &:nth-of-type(2){
+        transform: translateX(-100%);
+      }
+      &:nth-of-type(3){
+        transform: translateX(100%);
+      }
+      &:nth-of-type(4){
+        transform: translateX(-100%);
+      }
+    }
+
+  }
+  .list1{
+    .pageBg(c);
+    .list1_IcoWrap{
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      left: 0;
+      right: 0;
+      margin: 370px auto;
+      img{
+        height: 47px;
+        width: 47px;
+        position: absolute;
+      }
+
+    }
+  }
+  .list2{
+    .pageBg(d);
+    img{
+      height: 120px;
+      width: 193px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 400px auto;
+    };
+  }
+  .list3{
+    .pageBg(e);
+    p{
+      color: white;
+      border: 1px #FFF solid;
+      box-shadow: 0 0 15px #FFF;
+      border-radius: 5px;
+      transform: scale(0);
+    }
+    p:nth-child(1){
+      font: 11px "微软雅黑" ;
+      width: 134px;
+      height: 110px;
+      position: absolute;
+      left: 15px;
+      top: 100px;
+      transform-origin: 0 0 0;
+    }
+    p:nth-child(2){
+      font: 11px "微软雅黑" ;
+      width: 142px;
+      height: 110px;
+      position: absolute;
+      right: 50px;
+      top: 120px;
+      transform-origin: 0 0 0;
+    }
+    p:nth-child(3){
+      font: 11px "微软雅黑" ;
+      width: 62px;
+      height: 140px;
+      position: absolute;
+      right: 46px;
+      top: 260px;
+      transform-origin: 0 0 0;
+    }
+  }
+  .list4{
+    .pageBg(f);
+  }
+}
+canvas{
+  position: absolute;
+  z-index: 99;
+  top:0;
+  left: 0;
+  transition: opacity 0.5s;
+}
+
+
+
+//音乐部分
+.music{
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  background: url("../img/music.png") no-repeat;
+  background-size:100% 100% ;
+  right: 5px;
+  top: 5px;
+  z-index: 90;
+  //background: pink;
+  audio{
+    width: 100px;
+    height: 100%;
+  }
+}
+
+//箭头部分
+.arrow{
+  height: 26px;
+  width: 45px;
+  position: fixed;
+  background: pink;
+  bottom: 10px;
+  right: 161px;
+  z-index: 90;
+  background: url("../img/arr.png");
+  background-size: 100% 100%;
+}
+
+
+

@@ -32,8 +32,8 @@
   .header
     width (375/$rem)
     height (41/$rem)
-    background pink
-    padding (5/$rem) (10/$rem)
+    /*background pink*/
+    padding (5/$rem) (8/$rem)
     .innerHeader
       padding (8/$rem) 0
       width 100%
@@ -72,7 +72,7 @@
         width: (11/$rem)
         height: (11/$rem)
         position: absolute
-        right: (5/$rem)
+        right: (8/$rem)
         top: (6/$rem)
         background url("./search.png") no-repeat
         background-size 100%
@@ -82,9 +82,9 @@
       height  (21/$rem)
       width  (35/$rem)
       position absolute
-      right   (4/$rem)
+      right   (8/$rem)
       top (20/$rem)
-      padding 0 0 0 (6/$rem)
+      padding 0 (8/$rem) 0 (6/$rem)
       img
         width 70%
         height 100%

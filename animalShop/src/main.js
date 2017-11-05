@@ -4,8 +4,9 @@ import router from  "./router"
 import "./commons/stylus/index.styl"
 
 
-new Vue({
+var vue =new Vue({
   el: "#app",
   router,
   render: h => h(app)
 })
+
